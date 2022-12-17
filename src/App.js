@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { AppV3 } from './Components/AppV3';
+import { FirstClassComp } from './Lifecycles/FirstClassComp';
+import { Mounting } from './Lifecycles/Mounting';
+// jsx Stand for JavaScriptXml
+//if we want use we have some Certianss rules:
+//1)Functional component should Should always start with capital letter
+//2)onclick(), in jsx we onClick={}
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppV3 />
+      <FirstClassComp />
+      <Mounting/>
     </div>
+  
   );
 }
 
